@@ -112,7 +112,7 @@ def main():
             monthly_earned_coins = df_chart.groupby('月')['獲得コイン'].sum()
             st.bar_chart(monthly_earned_coins)
 
-
+        #test
         st.header('📖 記録一覧')
         # 日付の降順（新しいものが上）で表示
         st.dataframe(df.sort_values(by='日付', ascending=False), use_container_width=True)
